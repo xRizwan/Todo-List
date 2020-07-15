@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">JUST DO IT!</div>
+    <div id="container">
+        <div id="projects">
+            <div id="projectListContainer">
+                <ul id="pList">
+                </ul>
+            </div>
+        </div>
+        <div class="overlay">
+            <div id="displayCard" style="display: block;">
+                <p style="text-align: center;">Displaying</p>
+                <p class="card-item cardTitleHead">Title::</p>
+                <p class="card-title">placeholder</p>
+                <p class="card-item cardDueDateHead">dueDate::</p>
+                <p class="card-title card-date">placeholder</p>
+                <p class="card-item cardPriorityHead">priority::</p>
+                <p class="card-title card-priority">placeholder</p>
+                <p class="card-item cardDescHead">Description::</p>
+                <p class="card-item card-desc">placeholder</p>
+            </div>
+        </div>
+        <div class="overlay" id="addP">
+            <div class="formP">
+                <form>
+                    <label class="quit">X</label>
+                    <label class="form-heading">New Project</label>
+                    <label class="f-item">Name</label>
+                    <input class="f-item" id="pName" type="text" id="name">
+                    <input class="f-item" type="submit" id="pSubmit">
+                </form>
+          </div>
+        </div>
+        <div class="overlay" id="addT">
+            <div class="formT">
+                <form>
+                    <label class="quitT">X</label>
+                    <label class="form-heading">New Task</label>
+                    <label class="f-item">Name</label>
+                    <input class="f-item" id="tName" type="text" id="name">
+                    <label class="f-item">dueDate</label>
+                    <input type="date" id="tDate">
+                    <label class="f-item">Description</label>
+                    <textarea id="tDesc"></textarea>
+                    <br>
+                    <input type="radio" name="priority" class="priority" value="red">High
+                    <input type="radio" name="priority" class="priority" value="green">Medium
+                    <input type="radio" name="priority" class="priority" value="blue" checked>Low
+                    <input class="f-item" type="submit" id="tSubmit">
+                </form>
+            </div>
+        </div>
+        <div class="overlay" id="editT">
+            <div class="formT">
+                <form>
+                    <label class="quitTE">X</label>
+                    <label class="form-heading">New Task</label>
+                    <label class="f-item">Name</label>
+                    <input class="f-item" id="eTName" type="text" id="name">
+                    <label class="f-item">dueDate</label>
+                    <input type="date" id="eTDate">
+                    <label class="f-item">Description</label>
+                    <textarea id="eTDesc"></textarea>
+                    <br>
+                    <input type="radio" name="Tpriority" class="priority" value="red">High
+                    <input type="radio" name="Tpriority" class="priority" value="green">Medium
+                    <input type="radio" name="Tpriority" class="priority" value="blue" checked>Low
+                    <input class="f-item" type="submit" id="eTSubmit">
+                </form>
+            </div>
+        </div>
+        <div id="tasksContainer">
+            <div id="tasks">
+            </div>
+            <div class="tooltip">
+                <span class="material-icons" id="addTask">add</span>
+                <span class="tooltiptext">Add New Task</span>
+            </div>
+        </div>
+    </div>
+<script src="main.js"> </script>
+</body>
+</html>
