@@ -2,8 +2,8 @@
 
 <p align="center">TodoList Basic Project Details</p>
 todoList:
-	Task(title, duedate, priority, description,projectName ... EACH PROPERTY CAN BE MODIFIED EXCEPT PROJECTNAME);
 
+	Task(title, duedate, priority, description,projectName ... EACH PROPERTY CAN BE MODIFIED EXCEPT PROJECTNAME);
 	Project(title, duedate, Tasks ... ... EACH PROPERTY CAN BE MODIFIED):
 		this.name = name;
 	Tasks = [ARRAY CONTAINING MULTIPLE Task];
@@ -11,6 +11,7 @@ todoList:
 	TASKS AND PROJECTS STORED WITH LOCAL STORAGE AS JSON
 
 DOM:
+
 	_________________________________________________>
 	|\✓/[ACCESS TO ALL PROJECTS]\/
 	_________________________________________________
