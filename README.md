@@ -4,10 +4,9 @@
 todoList:
 
 	Task(title, duedate, priority, description,projectName ... EACH PROPERTY CAN BE MODIFIED EXCEPT PROJECTNAME);
-	Project(title, duedate, Tasks ... ... EACH PROPERTY CAN BE MODIFIED):
-		this.name = name;
 	Tasks = [ARRAY CONTAINING MULTIPLE Task];
-	Projects = [ARRAY CONTAINING MULTIPLE Project];
+	Projects Only Have Names.
+	Projects = [ARRAY CONTAINING MULTIPLE Projects];
 	TASKS AND PROJECTS STORED WITH LOCAL STORAGE AS JSON
 
 DOM:
